@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\UV">
+      <UniqueIdentifier>{6d5b9eca-3b7d-40db-a0aa-89a0e37017aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\UV">
+      <UniqueIdentifier>{6b92b13d-f51f-4941-9386-4c084297d63e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\SuperLU">
+      <UniqueIdentifier>{d4d01fbf-264d-4a3e-a09e-6f982e5ac314}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="xrender.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="..\..\Library\SysDataR\setup.ini" />
+    <None Include="..\ReadMe.txt">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoFlattenMapping.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="vector.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="BLI_boxpack2d.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="BLI_edgehash.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="BLI_editVert.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="BLI_heap.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="BLI_memarena.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="declare.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="DNA_listBase.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="MEM_guardedalloc.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="PackUV.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="parametrizer.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="parametrizer_intern.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="ONL_opennl.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenNLOld.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="BLI_arithb.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+    <ClInclude Include="BKE_utildefines.h">
+      <Filter>Header Files\UV</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoFlattenMapping.cpp">
+      <Filter>Source Files\UV</Filter>
+    </ClCompile>
+    <ClCompile Include="BLI_heap.cpp">
+      <Filter>Source Files\UV</Filter>
+    </ClCompile>
+    <ClCompile Include="BLI_memarena.cpp">
+      <Filter>Source Files\UV</Filter>
+    </ClCompile>
+    <ClCompile Include="boxpack2d.cpp">
+      <Filter>Source Files\UV</Filter>
+    </ClCompile>
+    <ClCompile Include="edgehash.cpp">
+      <Filter>Source Files\UV</Filter>
+    </ClCompile>
+    <ClCompile Include="mallocn.cpp">
+      <Filter>Source Files\UV</Filter>
+    </ClCompile>
+    <ClCompile Include="PackUV.cpp">
+      <Filter>Source Files\UV</Filter>
+    </ClCompile>
+    <ClCompile Include="parametrizer.cpp">
+      <Filter>Source Files\UV</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\colamd.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\get_perm_c.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\heap_relax_snode.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\lsame.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\memory.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\mmd.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\relax_snode.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\scolumn_bmod.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\scolumn_dfs.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\scopy_to_ucol.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\sgssv.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\sgstrf.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\sgstrs.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\smemory.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\smyblas2.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\sp_coletree.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\sp_ienv.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\sp_preorder.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\spanel_bmod.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\spanel_dfs.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\spivotL.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\spruneL.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\ssnode_bmod.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\ssnode_dfs.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\ssp_blas2.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\ssp_blas3.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\strsv.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\superlu_timer.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\sutil.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\util.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="..\superlu\xerbla.cpp">
+      <Filter>Source Files\SuperLU</Filter>
+    </ClCompile>
+    <ClCompile Include="opennl.cpp">
+      <Filter>Source Files\UV</Filter>
+    </ClCompile>
+    <ClCompile Include="arithb.cpp">
+      <Filter>Source Files\UV</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample", "sample\sample.vcxproj", "{31CAF483-83A1-4DB8-B2E3-D8DA20FB7113}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5D336B07-6180-4E4C-AA60-9AB28ECD4954} = {5D336B07-6180-4E4C-AA60-9AB28ECD4954}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xrender", "..\xrender\xrender.vcxproj", "{5D336B07-6180-4E4C-AA60-9AB28ECD4954}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31CAF483-83A1-4DB8-B2E3-D8DA20FB7113}.Debug|Win32.ActiveCfg = Debug|Win32
+		{31CAF483-83A1-4DB8-B2E3-D8DA20FB7113}.Debug|Win32.Build.0 = Debug|Win32
+		{31CAF483-83A1-4DB8-B2E3-D8DA20FB7113}.Release|Win32.ActiveCfg = Release|Win32
+		{31CAF483-83A1-4DB8-B2E3-D8DA20FB7113}.Release|Win32.Build.0 = Release|Win32
+		{5D336B07-6180-4E4C-AA60-9AB28ECD4954}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5D336B07-6180-4E4C-AA60-9AB28ECD4954}.Debug|Win32.Build.0 = Debug|Win32
+		{5D336B07-6180-4E4C-AA60-9AB28ECD4954}.Release|Win32.ActiveCfg = Release|Win32
+		{5D336B07-6180-4E4C-AA60-9AB28ECD4954}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

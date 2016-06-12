@@ -1,0 +1,173 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5D336B07-6180-4E4C-AA60-9AB28ECD4954}</ProjectGuid>
+    <RootNamespace>xrender</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\sample\Debug</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\sample\Release</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>../../ThirdParty/OpenMesh;D:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;XRENDER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>xrender.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>.\..\..\lib_debug\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>D:\Program Files (x86)\Microsoft DirectX SDK (June 2010)\Lib\x86</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>./../xcore;../;../../ThirdParty/OpenMesh;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;XRENDER_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <ModuleDefinitionFile>xrender.def</ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <ImportLibrary>.\..\..\lib\$(TargetName).lib</ImportLibrary>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\ReadMe.txt" />
+    <None Include="xrender.def" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="..\..\Library\SysDataR\setup.ini" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoFlattenMapping.h" />
+    <ClInclude Include="BKE_utildefines.h" />
+    <ClInclude Include="BLI_arithb.h" />
+    <ClInclude Include="BLI_boxpack2d.h" />
+    <ClInclude Include="BLI_edgehash.h" />
+    <ClInclude Include="BLI_editVert.h" />
+    <ClInclude Include="BLI_heap.h" />
+    <ClInclude Include="BLI_memarena.h" />
+    <ClInclude Include="declare.h" />
+    <ClInclude Include="DNA_listBase.h" />
+    <ClInclude Include="MEM_guardedalloc.h" />
+    <ClInclude Include="ONL_opennl.h" />
+    <ClInclude Include="OpenNLOld.h" />
+    <ClInclude Include="PackUV.h" />
+    <ClInclude Include="parametrizer.h" />
+    <ClInclude Include="parametrizer_intern.h" />
+    <ClInclude Include="vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\superlu\colamd.cpp" />
+    <ClCompile Include="..\superlu\get_perm_c.cpp" />
+    <ClCompile Include="..\superlu\heap_relax_snode.cpp" />
+    <ClCompile Include="..\superlu\lsame.cpp" />
+    <ClCompile Include="..\superlu\memory.cpp" />
+    <ClCompile Include="..\superlu\mmd.cpp" />
+    <ClCompile Include="..\superlu\relax_snode.cpp" />
+    <ClCompile Include="..\superlu\scolumn_bmod.cpp" />
+    <ClCompile Include="..\superlu\scolumn_dfs.cpp" />
+    <ClCompile Include="..\superlu\scopy_to_ucol.cpp" />
+    <ClCompile Include="..\superlu\sgssv.cpp" />
+    <ClCompile Include="..\superlu\sgstrf.cpp" />
+    <ClCompile Include="..\superlu\sgstrs.cpp" />
+    <ClCompile Include="..\superlu\smemory.cpp" />
+    <ClCompile Include="..\superlu\smyblas2.cpp" />
+    <ClCompile Include="..\superlu\spanel_bmod.cpp" />
+    <ClCompile Include="..\superlu\spanel_dfs.cpp" />
+    <ClCompile Include="..\superlu\spivotL.cpp" />
+    <ClCompile Include="..\superlu\spruneL.cpp" />
+    <ClCompile Include="..\superlu\sp_coletree.cpp" />
+    <ClCompile Include="..\superlu\sp_ienv.cpp" />
+    <ClCompile Include="..\superlu\sp_preorder.cpp" />
+    <ClCompile Include="..\superlu\ssnode_bmod.cpp" />
+    <ClCompile Include="..\superlu\ssnode_dfs.cpp" />
+    <ClCompile Include="..\superlu\ssp_blas2.cpp" />
+    <ClCompile Include="..\superlu\ssp_blas3.cpp" />
+    <ClCompile Include="..\superlu\strsv.cpp" />
+    <ClCompile Include="..\superlu\superlu_timer.cpp" />
+    <ClCompile Include="..\superlu\sutil.cpp" />
+    <ClCompile Include="..\superlu\util.cpp" />
+    <ClCompile Include="..\superlu\xerbla.cpp" />
+    <ClCompile Include="arithb.cpp" />
+    <ClCompile Include="AutoFlattenMapping.cpp" />
+    <ClCompile Include="BLI_heap.cpp" />
+    <ClCompile Include="BLI_memarena.cpp" />
+    <ClCompile Include="boxpack2d.cpp" />
+    <ClCompile Include="edgehash.cpp" />
+    <ClCompile Include="mallocn.cpp" />
+    <ClCompile Include="opennl.cpp" />
+    <ClCompile Include="PackUV.cpp" />
+    <ClCompile Include="parametrizer.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
