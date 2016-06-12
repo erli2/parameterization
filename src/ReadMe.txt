@@ -14,7 +14,7 @@ sample
 
 /////////////////////////////////////////////////////////////////////////////
 Usage 
-    Please see sample.cpp file.
+    Please see sample.cpp file for details.
     
 
 	 ------------------------------------
