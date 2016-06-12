@@ -1,36 +1,39 @@
 ========================================================================
-    ÈıÎ¬Íø¸ñÄ£ĞÍ×Ô¶¯·Ö¸î³ÌĞò
+    ä¸‰ç»´ç½‘æ ¼æ¨¡å‹è‡ªåŠ¨åˆ†å‰²ç¨‹åº
+    Auto mapping for 3d triangular meshes
 ========================================================================
 
-xrenderÎÄ¼ş¼Ğ
-    ÕâÊÇÍø¸ñ·Ö¸îÒÔ¼°²ÎÊı»¯µÄÖ÷Òª³ÌĞòÎÄ¼ş¼Ğ¡£
+xrender 
+    This is for mesh segmentation and parameterization.
+    
+superLU 
+    This is linear solver.
 
-superLUÎÄ¼ş¼Ğ
-    ÕâÊÇÏßĞÔ·½³ÌÇó½âÆ÷¡£
-
-sampleÎÄ¼ş¼Ğ
-    ÕâÊÇ²âÊÔ¹¤³ÌÎÄ¼ş¡£
+sample 
+    This is for tesing the algorithms.
+    
 
 /////////////////////////////////////////////////////////////////////////////
-ÓÃ·¨ÓÃÀı£º
-
-    Çë¼ûsample.cppÎÄ¼ş¡£
+Usage 
+    Please see sample.cpp file.
+    
 
 	 ------------------------------------
-	 ×Ô¶¯Õ¹UVº¯Êı AutoMapping
+	  AutoMapping function
 	 ------------------------------------
-	 --- pVertices£ºÊäÈë¶¥µã×ø±ê£» 
-	 --- pFaces£ºÊäÈëÃæÆ¬ĞÅÏ¢£» 
-	 --- pUVs:Êä³öUV×ø±ê£»
-	 --- UVIndex£ºÊä³ömeshÃ¿¸öÃæ¶ÔÓ¦µÄUVË÷Òı£»
-	 --- use_LSCM£ºÎªTrueÊ±£¬Ê¹ÓÃLeast Square Comformal Mapping Ëã·¨½øĞĞ²ÎÊı»¯£¬Ğ§¹û¸üºÃ£¬µ«ÊÇÊ±¼ä¸ü³¤£»ÎªFalseÊ±£¬²ÉÓÃÆ½ÃæÍ¶Ó°µÄ·½·¨½øĞĞ²ÎÊı»¯£¬ËÙ¶È¸ü¿ì
-	 --- angle£ºÕ¹Æ½½Ç¶È£¬Ä¬ÈÏ 45¶È,×î´ó90¶È£¬½Ç¶ÈÔ½Ğ¡£¬·Ö¸îÔ½ÆÆËé£» 
-	 --- margin:½ôËõãĞÖµ£¬·¶Î§0.0 ÖÁ1.0,Ä¬ÈÏ0.02£» 
+	 --- pVerticesï¼š vertices of the input mesh 
+	 --- pFacesï¼šfaces of the input mesh 
+	 --- pUVs: output for the UV texture coordinate 
+	 --- UVIndexï¼šoutput for the UV indices of each face 
+	 --- use_LSCMï¼šusing Least Square Comformal Mapping when it is True 
+	               
+	 --- angleï¼šangle of auto flatten mapping 
+	 --- margin: maringal threshold for the packing 
 
 	static void AutoMapping(vector <VEC3>  &pVertices, vector<CFace> &pFaces, vector<VEC2> &pUVs,vector<CFace>& UVIndex, bool use_LSCM = false, float angle = 45.0,float margin = 0.02);
 
 /////////////////////////////////////////////////////////////////////////////
-ÆäËû×¢ÊÍ£º
+
 
 
 
